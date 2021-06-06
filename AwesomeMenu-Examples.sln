@@ -1,0 +1,26 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# RemObjects Fire
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ExampleForAwesomeApp", "ExampleForAwesomeApp\ExampleForAwesomeApp.elements", "{B36F1E6C-7ABD-4B74-B001-A659AB6D0D12}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "TableViewExampleForAwesome", "TableViewExampleForAwesome\TableViewExampleForAwesome.elements", "{C5105BD7-4669-4A83-8717-19EE35641D42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B36F1E6C-7ABD-4B74-B001-A659AB6D0D12}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{B36F1E6C-7ABD-4B74-B001-A659AB6D0D12}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{B36F1E6C-7ABD-4B74-B001-A659AB6D0D12}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{B36F1E6C-7ABD-4B74-B001-A659AB6D0D12}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{C5105BD7-4669-4A83-8717-19EE35641D42}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{C5105BD7-4669-4A83-8717-19EE35641D42}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{C5105BD7-4669-4A83-8717-19EE35641D42}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{C5105BD7-4669-4A83-8717-19EE35641D42}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

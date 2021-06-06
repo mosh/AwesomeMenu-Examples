@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <RootNamespace>TableViewExampleForAwesome</RootNamespace>
+    <ProjectGuid>{C5105BD7-4669-4A83-8717-19EE35641D42}</ProjectGuid>
+    <OutputType>Executable</OutputType>
+    <AssemblyName>TableViewExampleForAwesome</AssemblyName>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <SDK>iOS</SDK>
+    <MangleTypeNames>True</MangleTypeNames>
+    <CreateAppBundle>True</CreateAppBundle>
+    <InfoPListFile>.\Resources\Info.plist</InfoPListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>False</Optimize>
+    <OutputPath>.\Bin\Debug</OutputPath>
+    <ConditionalDefines>DEBUG;TRACE;</ConditionalDefines>
+    <GenerateDebugInfo>True</GenerateDebugInfo>
+    <EnableAsserts>True</EnableAsserts>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\Bin\Release</OutputPath>
+    <GenerateDSym>True</GenerateDSym>
+    <CreateIPA>True</CreateIPA>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoreGraphics" />
+    <Reference Include="Foundation" />
+    <Reference Include="UIKit" />
+    <Reference Include="rtl" />
+    <Reference Include="libToffee" />
+
+    <RemoteProjectReference Include="github.com/mosh/ImportSolution/Awesome/Awesome.elements:*">
+      <Private>True</Private>
+    </RemoteProjectReference>
+    <Reference Include="libElements" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.pas" />
+    <Compile Include="RootViewController.pas" />
+    <Content Include="Resources\Info.plist" />
+    <AssetCatalog Include="Resources\Images.xcassets">
+      <AppIcon>AppIcon</AppIcon>
+    </AssetCatalog>
+    <Xib Include="Resources\LaunchScreen.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.Toffee.targets" />
+</Project>
