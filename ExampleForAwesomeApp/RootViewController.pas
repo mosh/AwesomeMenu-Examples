@@ -33,9 +33,11 @@ type
       var menus := new NSMutableArray<AwesomeMenuItem>;
       menus.addObjectsFromArray([starMenuItem1,starMenuItem2,starMenuItem3,starMenuItem4,starMenuItem5]);
 
-      var startItem := new AwesomeMenuItem WithImage(UIImage.imageNamed("bg-addbutton.png")) highlightedImage(UIImage.imageNamed("bg-addbutton-highlighted.png"))
-        ContentImage(UIImage.imageNamed("icon-plus.png")) highlightedContentImage(UIImage.imageNamed("icon-plus-highlighted.png"));
+      var startItem := new AwesomeMenuItem WithImage(UIImage.imageNamed('bg-addbutton.png')) highlightedImage(UIImage.imageNamed('bg-addbutton-highlighted.png'))
+        ContentImage(UIImage.imageNamed('icon-plus.png')) highlightedContentImage(UIImage.imageNamed('icon-plus-highlighted.png'));
+
       var menu := new AwesomeMenu WithFrame(self.view.bounds) startItem(startItem) optionMenus(menus);
+
       menu.delegate := self;
       menu.menuWholeAngle := M_PI_2;
       menu.farRadius := 110.0;
